@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+</head>
+<body>
+<script>
+a2=[ ,'b',undefined,,];
+//a2=new Array(2);
+//console.log(a2);
+alert("0 in a2:" + (0 in a2)+"   1 in a2:" + (1 in a2));
+
+for(var i=0; i< a2.length; i++){
+	//alert("i:"+i+"  a2.hasOwnProperty:"+a2.hasOwnProperty(i));
+}
+
+//a2=['a','b'];
+    //alert("a2.length:"+a2.length);
+	
+	/*alert("a2 has own property "+ (1 in a2));
+    var index;
+    for(index in a2){
+        alert("a2[index] index:"+ index+":" +a2[index]);
+    }*/
+	
+	a2.forEach(function(e,i,a){
+		alert("i:"+i+"\t e:"+e);
+	});
+	
+	//alert("a2[0]:"+a2[0]);
+	
+	//alert("end");
+</script>
+</body>
+</html>
