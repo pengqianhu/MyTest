@@ -5,7 +5,8 @@
 </head>
 <body>
 <script>
-a2=[ ,'b',undefined,,];
+/* in firefox 3, undefined will be inserted automatically. */
+a2=[ , 'b' , undefined , ,];
 //a2=new Array(2);
 //console.log(a2);
 alert("0 in a2:" + (0 in a2)+"   1 in a2:" + (1 in a2));
